@@ -1,0 +1,53 @@
+{
+  "name": "webpacktest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --open --color --hot --mode development --inline   --profile",
+    "dev": "webpack --mode development",
+    "test1": "echo \"Error: no test specified\" && exit 1",
+    "build": " webpack --mode production --progress --profile",
+    "buildStats": " webpack --progress --profile --mode production --json > stats.json",
+    "dll": "webpack --config webpack.dll.config.js --mode production",
+    "test": "jest ",
+    "test:dev": "jest --watchAll",
+    "server": "webpack-dev-server --mode development"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-core": "^7.0.0-0",
+    "babel-jest": "^23.6.0",
+    "babel-loader": "^8.0.2",
+    "babel-plugin-react-transform": "^3.0.0",
+    "cache-loader": "^1.2.2",
+    "clean-webpack-plugin": "^0.1.19",
+    "copy-webpack-plugin": "^4.5.2",
+    "css-loader": "^1.0.0",
+    "extended-define-webpack-plugin": "^0.1.3",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^1.1.11",
+    "happypack": "^5.0.0",
+    "hard-source-webpack-plugin": "^0.12.0",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "jest": "^23.6.0",
+    "mini-css-extract-plugin": "^0.4.3",
+    "react-transform-hmr": "^1.0.4",
+    "regenerator-runtime": "^0.12.1",
+    "style-loader": "^0.23.0",
+    "uglifyjs-webpack-plugin": "^1.2.5",
+    "webpack": "^4.19.1",
+    "webpack-bundle-analyzer": "^2.13.1",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.8"
+  },
+  "dependencies": {
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2"
+  }
+}
